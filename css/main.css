@@ -1,0 +1,135 @@
+/* No CSS *//*# sourceMappingURL=main.css.map */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+.background{
+
+    background-color: #fafafa;
+}
+
+
+/*
+.rectangle{
+    position: absolute;
+    width: 1800.71px;
+    height: 1800.71px;
+    left: 1534.53px;
+    top: -1249.98px;
+    background: linear-gradient(180deg, #00C6FF 0%, #0072FF 100%, #0072FF 100%);
+    border-radius: 140px;
+    transform: rotate(50.25deg);
+}*/
+
+
+body{
+    margin: auto;
+    width: 100%;
+    font-family: 'Poppins';
+}
+/* Card in the middle*/
+.card{
+    position: absolute;
+    width: 536px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 39px;
+    transform: translateX(-50%) translateY(-50%);
+}
+/*
+.card-2{
+    position: absolute;
+    width: 1800.71px;
+    height: 1800.71px;
+    left: 300px;
+    top: -1249.98px;
+    background: linear-gradient(180deg, #00C6FF 0%, #0072FF 100%, #0072FF 100%);
+    border-radius: 140px;
+    transform: rotate(50.25deg);
+}
+*/
+/*Text inside of the card*/
+.card-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: -10px;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+/* Image inside of the card*/
+#card-img {
+    width: 429.98px;
+    height: 320.38px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+
+}
+/* Elev Logo*/
+#logo {
+    width: 319px;
+    height: 129px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+/* Button Inside of Card */
+.noti-button{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 370px;
+    height: 67px;
+    background: #2196F3;
+    box-shadow: 0px 22px 40px rgba(33, 150, 243, 0.15);
+    border-radius: 50px;
+    border-style: none;
+    margin-top: 40px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+
+.noti-button:hover{
+    background-color: #1769aa;
+    box-shadow: 0px 22px 40px rgba(33, 150, 243, 0.15);
+    cursor: pointer;
+}
+/*
+.rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(180deg, #00C6FF 0%, #0072FF 100%, #0072FF 100%);
+    
+}*/
+
+.rect {
+
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-image: linear-gradient(to top left, #2196f3 50%, #fafafa 50%);
+    margin-right: -20px;
+}
