@@ -7,7 +7,6 @@
     background-color: #fafafa;
 }
 
-
 /*
 .rectangle{
     position: absolute;
@@ -25,6 +24,7 @@ body{
     margin: auto;
     width: 100%;
     font-family: 'Poppins';
+    overflow: hidden;
 }
 /* Card in the middle*/
 .card{
@@ -124,12 +124,184 @@ body{
     background: linear-gradient(180deg, #00C6FF 0%, #0072FF 100%, #0072FF 100%);
     
 }*/
-/* Rectangle for background*/
+/* Rectangle for background
+
+Change the linear gradient colors to change the color of the background splits
+*/
 .rect {
 
     width: 100%;
     height: 100vh;
     padding: 0;
-    background-image: linear-gradient(to top left, #2196f3 50%, #fafafa 50%);
+    background-image: linear-gradient(to top left, #2196f3 50%, #333131 50%);
     margin-right: -20px;
+}
+
+.unsubscribe {
+    display: block;
+    font-size: 16px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#unsubscribe-button {
+    color: white;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    /* phones */
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait){
+    /* phones */
+
+    .card{
+        position: absolute;
+        width: 212px;
+        height: 286px;
+        left: 50%;
+        top: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 25px;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .card-title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        margin-top: -10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #card-img {
+        width: 148.11px;
+        height: 110.36px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+    
+    }
+
+    #logo {
+        width: 111px;
+        height: 45px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    
+    }
+
+    .noti-button{
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 160px;
+        height: 28px;
+        background: #2196F3;
+        box-shadow: 0px 22px 40px rgba(33, 150, 243, 0.15);
+        border-radius: 50px;
+        border-style: none;
+        margin-top: 30px;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        color:white;
+    }
+
+    .unsubscribe {
+        display: block;
+        font-size: 10px;
+        margin-top: 30px;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+
+    .card{
+        position: absolute;
+        width: 402px;
+        height: 540px;
+        left: 50%;
+        top: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 39px;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .card-title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: -10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #logo {
+        width: 247px;
+        height: 101px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .noti-button{
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 266px;
+        height: 48px;
+        background: #2196F3;
+        box-shadow: 0px 22px 40px rgba(33, 150, 243, 0.15);
+        border-radius: 50px;
+        border-style: none;
+        margin-top: 40px;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        color:white;
+    }
+
+    .unsubscribe {
+        display: block;
+        font-size: 12px;
+        margin-top: 30px;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+
 }
