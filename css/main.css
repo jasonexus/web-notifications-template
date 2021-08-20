@@ -4,7 +4,7 @@
 
 .background{
 
-    background-color: #fafafa;
+    background-color: #F7F8FC;
 }
 
 /*
@@ -29,15 +29,16 @@ body{
 /* Card in the middle*/
 .card{
     position: absolute;
-    width: 536px;
-    height: 600px;
+    width: 677px;
+    height: 527px;
     left: 50%;
     top: 50%;
     background: #FFFFFF;
-    box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.15);
-    border-radius: 39px;
+    box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
     transform: translateX(-50%) translateY(-50%);
 }
+
 /*
 .card-2{
     position: absolute;
@@ -54,9 +55,9 @@ body{
 .card-title {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
-    margin-top: -10px;
+    margin-top: 40px;
     align-items: center;
     text-align: center;
 }
@@ -67,30 +68,86 @@ body{
 
 /* Image inside of the card*/
 #card-img {
-    width: 429.98px;
-    height: 320.38px;
+    width: 254px;
+    height: 254px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -40px;
+    margin-top: 0px;
 
 }
 /* Elev Logo*/
 #logo {
-    width: 319px;
-    height: 129px;
+    width: 168.67px;
+    height: 63.25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 30px;
 
 }
-/* Button Inside of Card */
-.noti-button{
-    margin: 0;
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    top: 50%;
+    left: 50%;
+    margin-top: 30px;
+}
+
+.noti-button {
+    width: 245px;
+    height: 51px;
+    background: #2196F3;
+    border-radius: 6px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    border-style: none;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color:white;
+    box-shadow: 0px 22px 40px rgba(33, 150, 243, 0.1);
+
+}
+
+.return-button {
+    width: 245px;
+    height: 51px;
+    border: 1px solid #333131;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    background-color: Transparent;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+
+/*.buttons {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+}
+.button-layout {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
     position: relative;
     top: 50%;
     left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}*/
+
+/* Button Inside of Card */
+/*.noti-button{
+    margin: 0;
+    display: inline-block;
+    position: relative;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 370px;
@@ -107,35 +164,26 @@ body{
     align-items: center;
     text-align: center;
     color:white;
-}
+}*/
+
 
 .noti-button:hover{
     background-color: #1769aa;
-    box-shadow: 0px 22px 40px rgba(33, 150, 243, 0.15);
+    box-shadow: 0px 22px 40px rgba(33, 150, 243, 0.1);
     cursor: pointer;
 }
-/*
-.rect {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(180deg, #00C6FF 0%, #0072FF 100%, #0072FF 100%);
-    
-}*/
-/* Rectangle for background
 
-Change the linear gradient colors to change the color of the background splits
-*/
-.rect {
-
-    width: 100%;
-    height: 100vh;
-    padding: 0;
-    background-image: linear-gradient(to top left, #2196f3 50%, #333131 50%);
-    margin-right: -20px;
+.return-button:hover{
+    background-color: #1f1f1f;
+    border-style: none;
+    color: white;
+    cursor: pointer;
 }
+
+.return-button + .noti-button {
+margin: 10px;
+}
+
 
 .unsubscribe {
     display: block;
@@ -143,11 +191,11 @@ Change the linear gradient colors to change the color of the background splits
     margin-top: 30px;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #1f1f1f;
 }
 
 #unsubscribe-button {
-    color: white;
+    color: #1f1f1f;
     font-weight: 600;
 }
 
@@ -159,38 +207,39 @@ Change the linear gradient colors to change the color of the background splits
     /* phones */
 }
 
+/*Small Phones/Devices*/
 @media only screen and (max-width: 480px) and (orientation: portrait){
     /* phones */
 
     .card{
         position: absolute;
-        width: 212px;
-        height: 286px;
+        width: 312px;
+        height: 435px;
         left: 50%;
         top: 50%;
         background: #FFFFFF;
-        box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.15);
-        border-radius: 25px;
+        box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
         transform: translateX(-50%) translateY(-50%);
     }
 
     .card-title {
+        overflow-wrap: break-word;
         font-family: Poppins;
         font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
+        font-weight: 500;
+        font-size: 16px;
         margin-top: -10px;
         align-items: center;
         text-align: center;
     }
 
     #card-img {
-        width: 148.11px;
-        height: 110.36px;
+        width: 192px;
+        height: 192px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 5px;
+        margin-bottom: 20px;
     
     }
 
@@ -200,32 +249,58 @@ Change the linear gradient colors to change the color of the background splits
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px;
+        margin-top: 30px;
     
     }
 
-    .noti-button{
-        margin: 0;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 160px;
-        height: 28px;
+    .noti-button {
+        width: 183px;
+        height: 38px;
         background: #2196F3;
-        box-shadow: 0px 22px 40px rgba(33, 150, 243, 0.15);
-        border-radius: 50px;
-        border-style: none;
-        margin-top: 30px;
+        border-radius: 6px;
         font-family: Poppins, sans-serif;
         font-weight: 500;
-        font-size: 10px;
-        line-height: 30px;
-        align-items: center;
+        border-style: none;
+        font-size: 12px;
+        line-height: 18px;
         text-align: center;
         color:white;
+        box-shadow: 0px 22px 40px rgba(33, 150, 243, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    
     }
+    
+    .return-button {
+        width: 183px;
+        height: 38px;
+        border: 1px solid #1f1f1f;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        background-color: Transparent;
+        border-radius: 6px;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .buttons {
+        display: flex;
+        top: 50%;
+        left: 50%;
+        margin-top: auto;
+    }
+
+    .return-button + .noti-button {
+        margin: 0px;
+        }
 
     .unsubscribe {
         display: block;
@@ -233,44 +308,95 @@ Change the linear gradient colors to change the color of the background splits
         margin-top: 30px;
         align-items: center;
         text-align: center;
-        color: white;
+        color: #1f1f1f;
     }
 }
 
+
+/*MEDIUM RANGE MEDIA QUERIES*/
 @media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
     /* portrait phones */
 
     .card{
         position: absolute;
-        width: 402px;
-        height: 540px;
+        width: 418px;
+        height: 435px;
         left: 50%;
         top: 50%;
         background: #FFFFFF;
-        box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.15);
-        border-radius: 39px;
+        box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
         transform: translateX(-50%) translateY(-50%);
     }
 
     .card-title {
         font-family: Poppins;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
-        margin-top: -10px;
+        margin-top: 20px;
         align-items: center;
         text-align: center;
     }
 
     #logo {
-        width: 247px;
-        height: 101px;
+        width: 128px;
+        height: 48px;
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
     }
 
+    .noti-button {
+        width: 183px;
+        height: 38px;
+        background: #2196F3;
+        border-radius: 6px;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        border-style: none;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color:white;
+        box-shadow: 0px 22px 40px rgba(33, 150, 243, 0.1);
+    
+    }
+    
+    .return-button {
+        width: 183px;
+        height: 38px;
+        border: 1px solid #333131;
+        box-sizing: border-box;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        background-color: Transparent;
+        border-radius: 6px;
+        font-size: 12px;
+        line-height: 18px;
+    
+    }
+
+    #card-img {
+        width: 224px;
+        height: 224px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        top: 50%;
+        left: 50%;
+        margin-top: 20px;
+    }
+
+    /*
     .noti-button{
         margin: 0;
         position: relative;
@@ -292,7 +418,7 @@ Change the linear gradient colors to change the color of the background splits
         align-items: center;
         text-align: center;
         color:white;
-    }
+    }*/
 
     .unsubscribe {
         display: block;
@@ -300,7 +426,7 @@ Change the linear gradient colors to change the color of the background splits
         margin-top: 30px;
         align-items: center;
         text-align: center;
-        color: white;
+        color: #1f1f1f;
     }
 
 
