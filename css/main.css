@@ -201,7 +201,7 @@ body {
   .unsubscribe {
     display: block;
     font-size: 10px;
-    margin-top: 30px;
+    margin-top: 20%;
     align-items: center;
     text-align: center;
     color: #1f1f1f;
@@ -286,7 +286,7 @@ body {
   .unsubscribe {
     display: block;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 15%;
     align-items: center;
     text-align: center;
     color: #1f1f1f;
