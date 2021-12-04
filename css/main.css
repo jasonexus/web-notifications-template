@@ -70,7 +70,7 @@ body {
 }
 
 .get-started-button {
-  margin: 0;
+  margin: auto;
   position: relative;
   top: 50%;
   left: 50%;
@@ -168,7 +168,7 @@ body {
   }
 
   .get-started-button {
-    margin: 0;
+    margin: auto;
     position: relative;
     top: 50%;
     left: 50%;
@@ -252,7 +252,7 @@ body {
   }
 
   .get-started-button {
-    margin: 0;
+    margin: auto;
     position: relative;
     top: 50%;
     left: 50%;
